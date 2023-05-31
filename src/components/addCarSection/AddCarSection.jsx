@@ -63,15 +63,15 @@ export const AddCarSection = () => {
     };
 
     return (
-        <section id="AddCarSection" className="bg-hero-pattern bg-[length:444px] bg-no-repeat bg-right pt-[90px]">
-            <form id="addData" method="post" action=''>
-                <div className="relative w-[694px] mt-[64px] ml-[112px]">
-                    <div className="relative pl-[124px] mb-[38px]">
+        <section id="AddCarSection" className="pt-[90px] sm:bg-none lg:bg-hero-pattern bg-no-repeat bg-right bg-[length:444px] xl:bg-[length:614px]">
+            <form className="sm:flex flex-col items-center lg:block" id="addData" method="post" action=''>
+                <div className="relative sm:flex flex-col items-center lg:block sm:ml-[0px]  lg:ml-[112px] sm:w-[100%] md:w-[694px] mt-[64px]">
+                    <div className="relative mb-[38px] sm:pl-0 lg:pl-[124px]">
                         <h2 className="font-arimo font-normal text-[18px] leading-[21px] text-regal-blue">Данные
                             автомобиля</h2>
                     </div>
 
-                    <div className="flex flex-wrap gap-y-[18px] gap-x-[30px] w-[491px]">
+                    <div className="flex flex-wrap gap-y-[18px] gap-x-[30px] w-[100%] max-w-[491px] sm:justify-center">
                         {
                             fieldsCarInfoArr.map((fieldInfo) => {
                                 return (
@@ -100,12 +100,13 @@ export const AddCarSection = () => {
                     </div>
                 </div>
 
-                <div className="relative w-[385px] mt-[24px] ml-[112px]">
-                    <div className="relative pl-[124px] mb-[24px]">
+                <div className="relative sm:flex flex-col items-center lg:block sm:ml-[0] lg:ml-[112px] sm:w-[100%] md:w-[385px] mt-[24px]">
+                    <div className="relative mb-[24px] sm:pl-0 lg:pl-[124px]">
                         <h2 className="font-arimo font-normal text-[18px] leading-[21px] text-regal-blue">Другие данные</h2>
                     </div>
 
-                    <div className="flex flex-wrap gap-y-[18px] gap-x-[33px] w-[491px] mb-[24px]">
+                    <div className="flex flex-wrap sm:justify-center lg:justify-normal
+                    gap-y-[18px] gap-x-[33px] mb-[24px] w-[100%] max-w-[491px] ">
                         {
                             userInformation.map((fieldInfo) => {
                                 return (
@@ -123,7 +124,7 @@ export const AddCarSection = () => {
                             })
                         }
                     </div>
-                    <div className="mb-[23px]">
+                    <div className="mb-[23px] sm:max-w-[391px] sm:w-[100%]">
                         <Textarea
                             id={'textarea'}
                             label={'Сообщение'}
@@ -149,12 +150,13 @@ export const AddCarSection = () => {
                                 buttonName="Отправить"
                                 onClick={() => console.log('submit')}
                                 width={"w-[190px]"}
-                                height={"h-[22px]"}
+                                height={"sm:h-[30px] lg:h-[22px]"}
                             />
                         </div>
                     </div>
                 </div>
             </form>
+            <div className="sm:block md:hidden sm:bg-hero-pattern bg-no-repeat bg-right bg-cover h-[444px] mt-[20px]"></div>
         </section>
     );
 };

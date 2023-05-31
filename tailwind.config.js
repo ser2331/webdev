@@ -2,6 +2,22 @@
 module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
+        screens: {
+            'sm': '320px',
+            // => @media (min-width: 320px) { ... }
+
+            'md': '768px',
+            // => @media (min-width: 768px) { ... }
+
+            'lg': '1024px',
+            // => @media (min-width: 1024px) { ... }
+
+            'xl': '1280px',
+            // => @media (min-width: 1280px) { ... }
+
+            '2xl': '1536px',
+            // => @media (min-width: 1536px) { ... }
+        },
         extend: {
             fontFamily: {
                 roboto: ['"Roboto"', 'sans-serif'],
@@ -22,12 +38,16 @@ module.exports = {
             },
             boxShadow: {
                 'card': '0px 0px 4px rgba(0, 0, 0, 0.25);',
+                'profit-card': '0px 4px 4px #E5E5E5;',
             },
             borderRadius: {
                 'left': '10px 0 0 10px',
                 'middle': '10px',
                 'right': '0 10px 10px 0',
-            }
+            },
+            listStyleImage: {
+                'checkmark': 'url("/src/accets/images/check.svg")',
+            },
         }
     },
     plugins: [],

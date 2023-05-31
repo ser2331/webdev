@@ -46,8 +46,11 @@ const logo3 = (
 
 export const ServiceDescription = () => {
     return (
-        <section id="ServiceDescription" className="bg-service bg-[length:516px_438px] bg-no-repeat bg-left mt-[90px] h-[438px] px-[66px]">
-            <div className="relative top-[-40px] w-[550px] float-right">
+        <section id="ServiceDescription"
+                 className="sm:bg-none lg:bg-service md:bg-[length:516px_438px] xl:bg-[length:664px_500px] bg-no-repeat
+                 bg-left mt-[90px] h-[438px] sm:px-[20px] lg:px-[66px]
+                 sm:flex items-center justify-center md:block">
+            <div className="relative top-[-40px] float-right sm:w-[100%] md:w-[550px]">
                 <div className={"flex flex-col items-center justify-center mb-[18px]"}>
                     <Logo width={"w-[69px]"} height={"h-[69px]"}/>
 
