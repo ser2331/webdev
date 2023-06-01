@@ -123,18 +123,18 @@ export const Navigation = () => {
                 }
 
                 <li className="mb-[55px]">
-                    <a href={'#'} className="flex gap-[20px] uppercase">
+                    <a href={'#Русский'} className="flex gap-[20px] uppercase">
                         {icons.lang}
                         Русский
                     </a>
                 </li>
 
                 <li className="flex">
-                    <a className="w-[24px] h-[24px]">
+                    <a href="#F" className="w-[24px] h-[24px]">
                         <img src={FFF} alt="F"/>
                     </a>
 
-                    <a className="w-[24px] h-[24px]">
+                    <a href={"#vk"} className="w-[24px] h-[24px]">
                         <img src={VK} alt="VK"/>
                     </a>
                 </li>
