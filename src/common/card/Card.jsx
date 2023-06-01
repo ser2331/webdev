@@ -27,11 +27,11 @@ export const Card = ({logo, label, description, width, height, type}) => {
             </div>
 
             <div
-                className="text-center text-regal-input-text leading-[21px] font-roboto font-bold text-[18px] mb-[8px]">
+                className="text-center text-regal-input-text leading-[21px] font-roboto font-bold sm:text-[14px] md:text-[18px] mb-[8px]">
                 <h2>{label}</h2>
             </div>
 
-            <div className="text-center text-regal-input-text leading-[14px] font-arimo font-normal text-[12px]">
+            <div className="text-center text-regal-input-text leading-[14px] font-arimo font-normal sm:text-[8px] md:text-[12px]">
                 <p>
                     {description}
                 </p>
