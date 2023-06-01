@@ -71,7 +71,7 @@ export const AddCarSection = () => {
                             автомобиля</h2>
                     </div>
 
-                    <div className="flex flex-wrap gap-y-[18px] gap-x-[30px] w-[100%] max-w-[491px] sm:justify-center">
+                    <div className="flex flex-wrap sm:gap-y-[26px] md:gap-y-[18px] sm:gap-x-[20px] md:gap-x-[30px] w-[100%] max-w-[491px] sm:justify-center">
                         {
                             fieldsCarInfoArr.map((fieldInfo) => {
                                 return (
@@ -81,18 +81,18 @@ export const AddCarSection = () => {
                                             label={fieldInfo.label}
                                             handleChange={handleChangeCarInformation}
                                             value={fieldInfo.value}
-                                            width={"w-[100px]"}
-                                            height={"h-[20px]"}
+                                            width={"sm:w-[111px] md:w-[100px]"}
+                                            height={"sm:h-[20px] md:h-[24px]"}
                                         />
                                     </div>)
                             })
                         }
 
-                        <div>
+                        <div className="sm:w-[100%] sm:max-w-[373px] md:w-auto">
                             <AddImageButton
                                 buttonName="Добавить фото"
                                 onClick={() => console.log('ADD')}
-                                width={"w-[361px]"}
+                                width={"sm:w-[100%] md:w-[361px]"}
                                 height={"h-[29px]"}
                                 id={'addImage'}
                             />

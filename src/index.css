@@ -10,3 +10,50 @@ html {
     font-size: 14px;
     line-height: 16px;
 }
+
+
+.hidden-menu {
+    display: block;
+    position: fixed;
+    list-style:none;
+    margin: 0;
+    box-sizing: border-box;
+    width: 90%;
+    background-color: #072446;
+    height: 100%;
+    top: 0;
+    right: -90%;
+    transition: right .2s;
+    z-index: 2;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+
+.hidden-menu-ticker {
+    display: none;
+}
+
+.btn-menu {
+    color: #fff;
+    padding: 7px;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    z-index: 3;
+    -webkit-backface-visibility: hidden;
+}
+.btn-menu span {
+    display: block;
+    height: 2px;
+    width: 28px;
+    background-color: #fff;
+    margin: 5px 0 0;
+    position: relative;
+}
+.btn-menu span.first {
+    margin-top: 0;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+    right: 0;
+}
