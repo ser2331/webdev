@@ -96,7 +96,7 @@ export const AboutProfit = () => {
                     </h2>
                 </div>
 
-                <div className="mb-[48px]">
+                <div className="mb-[48px] sm:mx-[8px] xs:m-0">
                     <p className="font-arimo font-normal text-[15px] leading-[17px] text-regal-blue">
                         Каждый автовладелец хотя бы раз сталкивался с необходимостью продать машину. Конечно же, вы
                         хотите селать это быстрее и с максимальной выгодой. Наши специалисты возьмут на себя все
@@ -121,7 +121,7 @@ export const AboutProfit = () => {
                             return (
                                 <li key={id} className="mb-[23px]">
                                     <span
-                                        className={`${id === 1 ? 'max-w-[360px] ' : 'max-w-[275px] '} sm:pl-[10px] md:pl-[18px] inline-block font-arimo font-bold text-[15px] leading-[17px] text-regal-input-text`}>
+                                        className={`${id === 1 ? 'sm:max-w-[275px] xs:max-w-[360px] ' : 'max-w-[275px] '} sm:pl-[10px] md:pl-[18px] inline-block font-arimo font-bold text-[15px] leading-[17px] text-regal-input-text`}>
                                         {label}
                                     </span>
                                 </li>)

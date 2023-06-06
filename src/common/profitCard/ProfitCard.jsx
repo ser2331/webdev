@@ -2,7 +2,7 @@ import React from 'react';
 
 export const ProfitCard = ({label, icon}) => {
     return (
-        <div className="w-[118px] h-[118px] shadow-profit-card flex flex-col items-center justify-center rounded-[10px]">
+        <div className="sm:w-[100px] xs:w-[118px] h-[118px] shadow-profit-card flex flex-col items-center justify-center rounded-[10px]">
             <div className="mb-[20px]">
                 {icon}
             </div>

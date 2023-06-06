@@ -6,8 +6,8 @@ import {Checkbox} from "../../common/checkbox/Checkbox";
 import {AddImageButton} from "../../common/addImageButton/AddImageButton";
 
 const sizes = {
-    small: 'w-[162px]',
-    large: 'w-[190px]'
+    small: 'sm:w-[100%] xs:w-[162px]',
+    large: 'sm:w-[100%] xs:w-[190px]'
 };
 
 const checkboxLabel = (
@@ -100,7 +100,7 @@ export const AddCarSection = () => {
                     </div>
                 </div>
 
-                <div className="relative sm:flex flex-col items-center lg:block sm:ml-[0] lg:ml-[112px] sm:w-[100%] md:w-[385px] mt-[24px]">
+                <div className="relative sm:px-[20px] xs:px-0 sm:flex flex-col items-center lg:block sm:ml-[0] lg:ml-[112px] sm:w-[100%] md:w-[385px] mt-[24px]">
                     <div className="relative mb-[24px] sm:pl-0 lg:pl-[124px]">
                         <h2 className="font-arimo font-normal text-[18px] leading-[21px] text-regal-blue">Другие данные</h2>
                     </div>
@@ -110,7 +110,7 @@ export const AddCarSection = () => {
                         {
                             userInformation.map((fieldInfo) => {
                                 return (
-                                    <div key={fieldInfo.id}>
+                                    <div key={fieldInfo.id} className="sm:w-[100%] xs:w-auto">
                                         <Input
                                             id={fieldInfo.id}
                                             label={fieldInfo.label}

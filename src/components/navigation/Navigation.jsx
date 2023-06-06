@@ -38,7 +38,7 @@ export const Navigation = () => {
                 <div className="w-[100%] absolute bg-regal-green rounded-bl-[10px] h-[70px]">
                     <div
                         className="relative h-[100%] flex justify-center flex-col text-white font-roboto font-bold text-[14px] leading-[16px] gap-[10px] sm:pl-[17px] md:pl-[64px] lg:pl-[84px]">
-                        <div className="sm:block md:hidden flex gap-[16px] items-center">
+                        <div className="sm:text-[10px] xs:text-[14px] sm:block md:hidden flex gap-[16px] items-center">
                             <span>Покупка авто по одному звонку!</span>
                         </div>
                         <div className="sm:hidden md:flex gap-[16px] items-center">

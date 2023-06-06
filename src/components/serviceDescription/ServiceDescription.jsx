@@ -78,7 +78,7 @@ export const ServiceDescription = () => {
 
                     <Card
                         type={"middle"}
-                        width={"w-[183px]"}
+                        width={"sm:w-[140px] xs:w-[183px]"}
                         height={"h-[273px]"}
                         logo={logo2}
                         label={'Просто'}

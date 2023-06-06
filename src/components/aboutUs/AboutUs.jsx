@@ -38,7 +38,7 @@ export const AboutUs = () => {
             </div>
 
             <div className="sm:w-[100%] md:w-[354px] sm:flex gap-[20px] md:block
-            font-arimo font-bold text-[16px] leading-[18px] text-regal-blue
+            font-arimo font-bold sm:text-[10px] xs:text-[16px] leading-[18px] text-regal-blue
             max-w-[542px] sm:pr-0 md:pr-[44px]">
                 <div className="flex sm:flex-col md:flex-row gap-[12px] items-center mb-[48px]">
                     <div>
